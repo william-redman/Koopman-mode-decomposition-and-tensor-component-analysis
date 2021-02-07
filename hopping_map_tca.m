@@ -51,6 +51,7 @@ model.factors.B = {'b'};
 model.factors.C = {'c'}; 
 model.factorizations.tensor.data = X;
 model.factorizations.tensor.cpd = {'A', 'B', 'C'}; 
+[Uhat, output] = cpd(X, R); 
 sdf_check(model, 'print'); 
 sol = sdf_nls(model); 
 

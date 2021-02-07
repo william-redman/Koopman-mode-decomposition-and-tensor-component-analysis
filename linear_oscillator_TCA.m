@@ -66,6 +66,7 @@ model.factorizations.tensor.data = x;
 model.factorizations.tensor.cpd = {'A', 'B', 'C'}; 
 sdf_check(model, 'print'); 
 sol = sdf_nls(model); 
+[Uhat, output] = cpd(x, R); 
 
 system_factors = sol.factors.A; 
 time_factors = sol.factors.B; 
@@ -114,7 +115,7 @@ for ii = 1:2
     figure(3 * (ii - 1) + 1)
     bar([1, 2], [v(:, ii), abs(system_factors(:, ordering(ii)) / (init_scaling * time_scaling))]); hold on 
     title(strcat({'Koopman modes / participation factors for mode'}, {' '}, {num2str(ii)}))
-    legend('TCA', 'KMD'); 
+    legend('KMD', 'TCA'); 
     
     figure(3 * (ii - 1) + 2)
     plot(time_factors(:, ordering(ii)) * time_scaling, 'bo', 'MarkerFaceColor', 'b', 'MarkerEdgeColor', 'b'); hold on
