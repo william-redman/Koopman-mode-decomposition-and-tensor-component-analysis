@@ -3,7 +3,7 @@ This houses the code that generated the examples (linear oscillator and Hopping 
 
 ## Requirements
 
-The provided function makes use of only Matlab. TensorLab 3.0 (https://www.tensorlab.net/) is requried. 
+The provided function makes use of only Matlab. TensorLab 3.0 (which is freely available at https://www.tensorlab.net/) is requried. 
 
 ## Questions 
 
