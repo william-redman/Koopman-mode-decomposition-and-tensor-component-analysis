@@ -1,5 +1,5 @@
 # Koopman-mode-decomposition-and-tensor-component-analysis
-This houses the code that generated the examples (linear oscillator and Hopping map) for the paper "On Koopman mode decomposition and tensor component analysis" W. T. Redman (2021). For more details see the scripts and the accompanying paper (https://arxiv.org/abs/2101.00555). 
+This houses the code that generated the example for the paper "On Koopman mode decomposition and tensor component analysis" W. T. Redman (2021). For more details see the scripts and the accompanying paper (https://arxiv.org/abs/2101.00555). 
 
 ## Requirements
 
